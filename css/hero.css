@@ -1,0 +1,88 @@
+.hero {
+  min-height: calc(100vh - 144px);
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 1.1;
+  color: var(--secondary);
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: var(--radius-small);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--background-light);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.placeholder-card {
+  width: 100%;
+  max-width: 500px;
+  min-height: 380px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 700;
+}

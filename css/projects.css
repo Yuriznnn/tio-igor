@@ -1,0 +1,40 @@
+/* ===============================
+   PROJECTS
+================================ */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.project-card {
+    height: 320px;
+
+    border-radius: var(--radius);
+
+    background: linear-gradient(135deg, #eef4ff, #dbeafe);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary);
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}

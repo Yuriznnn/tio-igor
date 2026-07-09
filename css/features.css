@@ -1,0 +1,35 @@
+/* ===============================
+   FEATURES
+================================ */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 70px;
+}
+
+.feature {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.feature {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
