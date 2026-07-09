@@ -1,46 +1,38 @@
 /* ===============================
-   RESPONSIVO
+   RESPONSIVO BÁSICO
 ================================ */
 
-/* Tablets */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
+  main {
+    padding-top: 90px;
+  }
+
   .navbar {
-    height: auto;
-    padding: 25px 8%;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 90px;
+    padding: 0 6%;
+  }
+
+  .menu,
+  .subbar {
+    display: none;
   }
 
   .logo {
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    font-size: 1.4rem;
   }
 
   .btn-header {
-    margin-top: 10px;
+    padding: 11px 16px;
+    font-size: 0.85rem;
   }
 
-  .subbar {
-    height: auto;
-    padding: 18px 8%;
-    flex-wrap: wrap;
-    gap: 16px;
-    text-align: center;
+  .hero {
+    padding: 80px 6%;
   }
 
-  main {
-    padding-top: 210px;
-  }
-
-  .hero,
-  .about-grid {
+  .hero-container {
     grid-template-columns: 1fr;
+    gap: 45px;
     text-align: center;
   }
 
@@ -48,100 +40,58 @@
     max-width: 100%;
   }
 
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-image {
-    margin-top: 40px;
-  }
-
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .features-grid,
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer a:hover {
-    transform: none;
-  }
-}
-
-/* Celulares */
-@media (max-width: 768px) {
-  section {
-    padding: 70px 6%;
-  }
-
-  .menu {
-    gap: 14px;
-    font-size: 0.9rem;
-  }
-
-  .btn-header {
-    width: 100%;
-    text-align: center;
-  }
-
   .hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
-  .placeholder-card,
-  .about-image {
-    min-height: 280px;
+  .hero-buttons {
+    justify-content: center;
   }
 
-  .cards-grid,
-  .features-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .hero-image img {
+    max-width: 100%;
   }
 
-  .contact-form {
-    padding: 28px;
-  }
-}
-
-/* Celulares pequenos */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 22px 6%;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .subbar {
-    display: none;
-  }
-
-  main {
-    padding-top: 190px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
+  section {
+    padding: 70px 6%;
   }
 
   .section-header h2 {
     font-size: 2rem;
   }
 
+  .about-grid,
+  .cards-grid,
+  .features-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    min-height: 260px;
+  }
+
+  .card,
+  .feature,
+  .project-card {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 28px;
+  }
+
   .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
     padding: 45px 6% 30px;
+  }
+
+  .footer a:hover {
+    transform: none;
   }
 }

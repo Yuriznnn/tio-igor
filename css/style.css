@@ -58,7 +58,7 @@ img {
 }
 
 section {
-  padding: 100px 8%;
+  padding: 100px 0;
   scroll-margin-top: 170px;
 }
 
@@ -68,4 +68,30 @@ section {
 
 main {
   padding-top: 144px;
+}
+
+.container{
+
+    width:100%;
+    max-width:1280px;
+    margin:0 auto;
+
+}
+
+.subbar {
+    height: 58px;
+    background: var(--background-light);
+}
+
+.subbar .container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-light);
 }

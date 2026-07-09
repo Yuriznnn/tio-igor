@@ -6,6 +6,7 @@
   background: var(--secondary);
   color: var(--white);
   padding: 50px 8% 35px;
+
   display: grid;
   grid-template-columns: 2fr 1fr 1.5fr;
   gap: 50px;
